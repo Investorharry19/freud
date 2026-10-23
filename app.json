@@ -2,6 +2,7 @@
   "expo": {
     "name": "freud",
     "slug": "freud",
+    "scheme": "freud",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,6 +21,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow Freud to use device motion to move the bubbles."
+        }
+      ]
+    ]
   }
 }
